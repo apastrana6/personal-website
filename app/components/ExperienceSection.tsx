@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { experiences } from "../app/data/info";
+import { experiences } from "../data/info";
 
 export default function ExperienceSection() {
   return (
