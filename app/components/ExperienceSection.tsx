@@ -10,13 +10,14 @@ export default function ExperienceSection() {
         <div className="mt-10 space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white overflow-hidden flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-transparent dark:bg-transparent overflow-hidden flex items-center justify-center">
                 <Image
                   src={exp.logo}
                   alt={`${exp.company} logo`}
                   width={48}
                   height={48}
-                  className="object-cover"
+                  className="object-cover w-full h-full"
+                  priority={index === 0}
                 />
               </div>
               <div>
