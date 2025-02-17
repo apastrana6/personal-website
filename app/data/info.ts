@@ -3,8 +3,8 @@ export const experiences = [
     company: "Palantir Technologies",
     title: "Incoming Software Engineer",
     location: "Denver, Colorado, United States",
-    period: "December 2024 - Present",
-    description: "Starting December 2024 working on Foundry.",
+    period: "April 2025",
+    description: "Starting April 2025 working on Foundry.",
     logo: "/palantir.jpeg"
   },
   {
@@ -27,21 +27,22 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Personal Portfolio",
-    description: "A modern, responsive portfolio website built with Next.js, React, TypeScript, and TailwindCSS. Features dark mode support and smooth scrolling.",
+    title: "TBD",
+    description: "",
+    stack: ["TypeScript", "Java", "Gradle", "AWS"],
+    github: ""
+  },
+  {
+    title: "TBD",
+    description: "",
+    stack: ["Python", "OpenCV", "TensorFlow", "NumPy"],
+    github: ""
+  },
+  {
+    
+    title: "Personal Website",
+    description: "A modern, responsive portfolio website built with Next.js, React, TypeScript, and TailwindCSS. Hosted on Vercel.",
     stack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     github: "https://github.com/apastrana/personal-website"
-  },
-  {
-    title: "Computer Vision Project",
-    description: "Implemented advanced computer vision algorithms for real-time object detection and tracking using OpenCV and Python.",
-    stack: ["Python", "OpenCV", "TensorFlow", "NumPy"],
-    github: "https://github.com/apastrana/cv-project"
-  },
-  {
-    title: "Cloud Infrastructure Tool",
-    description: "Developed a CLI tool for automating AWS infrastructure deployment using TypeScript and AWS SDK.",
-    stack: ["TypeScript", "AWS SDK", "Node.js", "Infrastructure as Code"],
-    github: "https://github.com/apastrana/cloud-tool"
   }
 ]; 

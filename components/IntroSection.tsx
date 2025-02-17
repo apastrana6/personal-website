@@ -8,7 +8,7 @@ export default function IntroSection() {
           Hi, I&apos;m Anthony Pastrana
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-          I&apos;m a software engineer with experience in TypeScript, AWS, and computer vision. Currently based in Miami, Florida.
+          Software developer focused on ai/ml, infrastructure, and backend. Currently based in Miami, FL.
         </p>
       </div>
     </section>
