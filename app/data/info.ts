@@ -41,8 +41,8 @@ export const projects = [
   {
     
     title: "Personal Website",
-    description: "A modern, responsive portfolio website built with Next.js, React, TypeScript, and TailwindCSS. Hosted on Vercel.",
-    stack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
-    github: "https://github.com/apastrana/personal-website"
+    description: "This website! Built with Next.js, React, TypeScript, and Tailwind CSS. Hosted on Vercel.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/apastrana6/personal-website"
   }
 ]; 
