@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 
 const inter = Public_Sans({ subsets: ["latin"], weight: "300"});
@@ -24,6 +25,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           {children}
           <SpeedInsights />
+          <Analytics />
         </div>
       </body>
     </html>
