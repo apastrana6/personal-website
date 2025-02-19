@@ -3,31 +3,84 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
-  font-family: Arial, Helvetica, sans-serif;
+  --primary: 29 78 216; /* blue-700 */
+  --primary-light: 59 130 246; /* blue-500 */
+  --background: 15 23 42; /* slate-900 */
+  --foreground: 248 250 252; /* slate-50 */
+  --muted: 51 65 85; /* slate-700 */
+  --muted-foreground: 148 163 184; /* slate-400 */
+  --border: 71 85 105; /* slate-600 */
+  --radius: 0.5rem;
 }
 
 @layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 text-slate-50 min-h-screen;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold;
   }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent;
+  }
+  
+  .section-padding {
+    @apply px-4 py-12 sm:px-6 sm:py-16 lg:px-8;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:shadow-blue-500/10;
+  }
+
+  .nav-link {
+    @apply text-slate-300 hover:text-slate-500 transition-colors duration-200;
+  }
+
+  .intro-text {
+    @apply text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight;
+    text-shadow: 0 0 80px rgba(192, 219, 255, 0.3);
+  }
+
+  .intro-description {
+    @apply text-xl sm:text-2xl text-slate-300 max-w-3xl leading-relaxed;
+  }
+}
+
+/* Subtle background pattern */
+.bg-pattern {
+  background-color: transparent;
+  background-image: 
+    radial-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    radial-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  animation: patternMove 20s linear infinite;
+}
+
+@keyframes patternMove {
+  0% {
+    background-position: 0 0, 25px 25px;
+  }
+  100% {
+    background-position: 50px 50px, 75px 75px;
+  }
+}
+
+/* Smooth section transitions */
+.section-transition {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Container styles */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Card styles */
+.card {
+  @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl;
 }

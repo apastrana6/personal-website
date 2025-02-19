@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react"
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
-const inter = Public_Sans({ subsets: ["latin"], weight: "300"});
+const inter = Public_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Anthony Pastrana",
@@ -21,9 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-white dark:bg-gray-900`}>
-        <div className="flex min-h-screen flex-col">
-          {children}
+      <body className={inter.className}>
+        <div className="fixed inset-0 -z-10 bg-pattern" aria-hidden="true" />
+        <div className="relative flex min-h-screen flex-col">
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
           <SpeedInsights />
           <Analytics />
         </div>
