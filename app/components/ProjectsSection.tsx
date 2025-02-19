@@ -44,10 +44,10 @@ export default function ProjectsSection() {
             <motion.div
               key={index}
               variants={item}
-              className="card group relative flex flex-col p-6"
+              className="card group relative flex flex-col p-6 card-hover"
             >
               <div className="flex-grow">
-                <h3 className="text-xl font-semibold text-slate-100 group-hover:text-slate-500 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-100">
                   {project.title}
                 </h3>
                 <p className="mt-2 text-slate-300">
