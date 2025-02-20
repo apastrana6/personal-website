@@ -9,7 +9,6 @@
 - Next.js
 - Tailwind CSS
 - TypeScript
-- Shadcn
 - Vercel
 
 ## Running Locally
