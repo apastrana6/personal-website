@@ -11,7 +11,16 @@ export const metadata: Metadata = {
   title: "Anthony Pastrana",
   description: "Personal portfolio website of Anthony Pastrana, Software Engineer",
   icons: {
-    icon: "/tab-icon.svg"
+    icon: [
+      { url: "/tab-icon.svg", type: "image/svg+xml" },
+      { url: "/tab-icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/tab-icon.png", type: "image/png", sizes: "16x16" },
+      { url: "/tab-icon.png", type: "image/png", sizes: "192x192" },
+      { url: "/tab-icon.png", type: "image/png", sizes: "96x96" }
+    ],
+    apple: [
+      { url: "/tab-icon.png", sizes: "180x180" }
+    ]
   },
 };
 
