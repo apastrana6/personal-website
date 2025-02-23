@@ -38,22 +38,24 @@ export const education = [
 
 export const projects = [
   {
-    title: "TBD",
-    description: "",
-    stack: ["TypeScript", "Java", "Gradle", "AWS"],
-    github: ""
+    title: "StudyAssist",
+    description: "StudyAssist uses agentic AI to provide students with personalized study assistance.",
+    stack: ["Next.js", "LangGraph", "Supabase", "Gemini"],
+    github: "https://github.com/apastrana6/StudyAssist",
+    link: "https://studyassist.app"
   },
   {
-    title: "TBD",
-    description: "",
-    stack: ["Python", "OpenCV", "TensorFlow", "NumPy"],
-    github: ""
+    title: "Agriculture Robotics - Peach Pruning",
+    description: "Developed an autonomous robot for pruning peaches trees as part of a team of 6 at GTRI. Focused on object detection and navigation.",
+    stack: ["Python", "OpenCV", "YOLO", "NumPy"],
+    github: "",
+    link: ""
   },
   {
-    
     title: "Personal Website",
-    description: "This website! Built with Next.js, React, TypeScript, and Tailwind CSS. Hosted on Vercel.",
+    description: "This website! Hosted on Vercel.",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/apastrana6/personal-website"
+    github: "https://github.com/apastrana6/personal-website",
+    link: "https://apastrana.dev"
   }
 ]; 

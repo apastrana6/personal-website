@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { AiOutlineGithub, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineArrowRight, AiOutlineLink } from "react-icons/ai";
 import { projects } from "../data/info";
 
 const container = {
@@ -64,16 +64,32 @@ export default function ProjectsSection() {
                   ))}
                 </div>
               </div>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
-              >
-                <AiOutlineGithub className="mr-2 h-5 w-5" />
-                View on GitHub
-                <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-              </a>
+              <div className="mt-6 flex gap-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
+                  >
+                    <AiOutlineGithub className="mr-2 h-5 w-5" />
+                    GitHub
+                    <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                  </a>
+                )}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
+                  >
+                    <AiOutlineLink className="mr-2 h-5 w-5" />
+                    Visit Site
+                    <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                  </a>
+                )}
+              </div>
             </motion.div>
           ))}
         </motion.div>
