@@ -32,6 +32,7 @@ export const education = [
   {
     school: "Georgia Institute of Technology",
     degree: "Bachelor of Science in Computer Science",
+    minor: "Political Science",
     location: "Atlanta, Georgia",
     period: "August 2021 - Dec 2024",
     description: "Concentrations in Intelligence and Modeling & Simulation",

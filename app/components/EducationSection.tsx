@@ -63,6 +63,9 @@ export default function EducationSection() {
                 </h3>
                 <p className="text-lg font-medium text-slate-400/90">
                   {edu.degree}
+                  {edu.minor && (
+                    <span className="text-slate-400/70"> • Minor in {edu.minor}</span>
+                  )}
                 </p>
                 <div className="flex items-center gap-4 mt-1 text-sm text-slate-400">
                   <span className="flex items-center gap-1">

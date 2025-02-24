@@ -53,42 +53,42 @@ export default function ProjectsSection() {
                 <p className="mt-2 text-slate-300">
                   {project.description}
                 </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.stack.map((stack, stackIndex) => (
-                    <span
-                      key={stackIndex}
-                      className="px-3 py-1 text-xs font-medium bg-blue-900/30 text-blue-300 rounded-full border border-blue-800/50"
+                <div className="mt-4 flex gap-4">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
                     >
-                      {stack}
-                    </span>
-                  ))}
+                      <AiOutlineGithub className="mr-2 h-5 w-5" />
+                      GitHub
+                      <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                    </a>
+                  )}
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
+                    >
+                      <AiOutlineLink className="mr-2 h-5 w-5" />
+                      Visit Site
+                      <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                    </a>
+                  )}
                 </div>
               </div>
-              <div className="mt-6 flex gap-4">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
+              <div className="mt-6 flex flex-wrap gap-2">
+                {project.stack.map((stack, stackIndex) => (
+                  <span
+                    key={stackIndex}
+                    className="px-3 py-1 text-xs font-medium bg-blue-900/30 text-blue-300 rounded-full border border-blue-800/50"
                   >
-                    <AiOutlineGithub className="mr-2 h-5 w-5" />
-                    GitHub
-                    <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-                  </a>
-                )}
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-500 group/link"
-                  >
-                    <AiOutlineLink className="mr-2 h-5 w-5" />
-                    Visit Site
-                    <AiOutlineArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-                  </a>
-                )}
+                    {stack}
+                  </span>
+                ))}
               </div>
             </motion.div>
           ))}
