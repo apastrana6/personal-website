@@ -77,6 +77,16 @@ export default function ExperienceSection() {
                 <p className="mt-4 text-slate-300 leading-relaxed">
                   {exp.description}
                 </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {exp.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-3 py-1 text-xs font-medium bg-blue-900/30 text-blue-300 rounded-full border border-blue-800/50"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

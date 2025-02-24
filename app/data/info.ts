@@ -5,7 +5,8 @@ export const experiences = [
     location: "Denver, Colorado",
     period: "April 2025",
     description: "Starting April 2025 working on Foundry.",
-    logo: "/palantir.jpeg"
+    logo: "/palantir.jpeg",
+    technologies: []
   },
   {
     company: "Amazon",
@@ -13,7 +14,8 @@ export const experiences = [
     location: "Sunnyvale, California",
     period: "May 2024 - August 2024",
     description: "Intern for Summer 2024 working on the Items and Offers Platform.",
-    logo: "/amazon.jpeg"
+    logo: "/amazon.jpeg",
+    technologies: ["Java", "TypeScript", "AWS", "JUnit", "Mockito", "Gradle", "Drools"]
   },
   {
     company: "Georgia Tech College of Computing",
@@ -21,7 +23,8 @@ export const experiences = [
     location: "Atlanta, Georgia",
     period: "January 2023 - May 2024",
     description: "Assisted professors in CS 1331: Introduction to Object-Oriented Programming.",
-    logo: "/gt-coc.jpeg"
+    logo: "/gt-coc.jpeg",
+    technologies: ["Java", "JUnit", "JavaFX"]
   },
 ];
 
